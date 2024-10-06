@@ -51,23 +51,17 @@
     <h3>Experiencia</h3>
     <p>Estos son algunos de los trabajos que he realizado como desarrollador web:</p>
 
-    {% for experience in experiences %}
-    <div class="col-md-4 p-4">
-      <div class="card bg-black card-project">
-        <img src="{{experience.image.url }}" class="card-img-top" />
-
-        <div class="card-body">
-
-          <h2>{{ experience.title }}</h2>
-          <p>{{ experience.description }}</p>
-
-          {% if experience.url %}
-          <a href="{{experience.url}}" class="btn btn-light rounded-0 btn-sm" target="__blank" rel="noreferrer">Visit the
-            Project</a>
-          {% endif %}
-        </div>
+    {% for experiencia in experiencias %} 
+  <div class="col-md-4 p-4">
+    <div class="card bg-black card-project"> 
+      <div class="card-body">
+        <h2>{{ experiencia.institucion_del_curso }}</h2>
+        <p>{{ experiencia.descripcion_curso }}</p>
+        <p>Fecha: {{ experiencia.fecha_curso }}</p>
+        <p>Duración: {{ experiencia.numero_horas }} horas</p>
       </div>
     </div>
+  </div>
     {% endfor %}
 
 
