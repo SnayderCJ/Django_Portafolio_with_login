@@ -20,5 +20,3 @@ logs/
 */migrations/
 */migrations/__pycache__/
 
-# Archivos de configuración de Django
-db.sqlite3
